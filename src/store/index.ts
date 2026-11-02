@@ -1,9 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import statsReducer from './slices/statsSlice';
+
+
 
 export const store = configureStore({
     reducer: {
-        // Aquí conectaremos stats, inventory y actionLog en las siguientes fases
+        stats: statsReducer,
     },
 });
 
