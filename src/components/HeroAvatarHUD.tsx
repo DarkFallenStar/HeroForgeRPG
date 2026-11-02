@@ -18,7 +18,7 @@ export const HeroAvatarHUD: React.FC = () => {
                 <View style={[styles.badge, { backgroundColor: hero.auraColor }]}>
                     <Text style={styles.badgeText}>{hero.heroClass.toUpperCase()}</Text>
                 </View>
-                <Text style={styles.powerText}>⚔️ Poder: {hero.combatPower}</Text>
+                <Text style={styles.powerText}>⚔️ Poder: {hero.isOverloaded ? hero.combatPower + " -30%!" : hero.rawPower}</Text>
             </View>
 
             {/* Avatar Central */}
