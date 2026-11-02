@@ -1,7 +1,7 @@
 # Estado del Proyecto: HeroForge RPG
 
-- **Fase SDD actual:** Fase 5 (Construcción de las 4 Zonas Visuales Independientes).
-- **Tarea actual:** Implementación de `src/components/ReduxLiveInspector.tsx` (Zona D).
+- **Fase SDD actual:** Fase 5 / Fase 6 (Integración en App.tsx y Pruebas en Vivo).
+- **Tarea actual:** Integración de los 4 componentes en `App.tsx` con `<Provider store={store}>`.
 - **Tareas terminadas:**
   - [x] Diagnóstico completo de Antigravity, Expo y entorno.
   - [x] Configuración de reglas modulares en `.agents/rules/` y `GEMINI.md`.
@@ -16,9 +16,8 @@
   - [x] Implementación de `src/components/HeroAvatarHUD.tsx` (Zona A).
   - [x] Implementación de `src/components/StatsControlPanel.tsx` (Zona B).
   - [x] Implementación de `src/components/ArmoryGrid.tsx` (Zona C).
+  - [x] Implementación de `src/components/ReduxLiveInspector.tsx` (Zona D).
 - **Tareas pendientes:**
-  - [ ] Implementación guiada de las 4 zonas visuales:
-    - [ ] `ReduxLiveInspector` (Zona D).
   - [ ] Integración en `App.tsx` con `<Provider store={store}>`.
   - [ ] Verificación de tipos y pruebas visuales en Expo.
   - [ ] Guion y preparación para el video explicativo (5-7 min).
