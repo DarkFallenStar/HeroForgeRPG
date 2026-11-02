@@ -1,7 +1,7 @@
 # Estado del Proyecto: HeroForge RPG
 
 - **Fase SDD actual:** Fase 3 (Modelado de Slices de Estado).
-- **Tarea actual:** Implementación de `inventorySlice.ts`.
+- **Tarea actual:** Implementación de `actionLogSlice.ts`.
 - **Tareas terminadas:**
   - [x] Diagnóstico completo de Antigravity, Expo y entorno.
   - [x] Configuración de reglas modulares en `.agents/rules/` y `GEMINI.md`.
@@ -10,8 +10,8 @@
   - [x] Instalación de dependencias: `@reduxjs/toolkit` y `react-redux`.
   - [x] Creación de `src/store/index.ts` con RootState, AppDispatch y hooks tipados.
   - [x] Implementación y conexión de `statsSlice.ts` con límites de atributos (hasta 1) y curación progresiva (+10 HP).
+  - [x] Implementación y conexión de `inventorySlice.ts` con 9 ítems balanceados e IDs semánticas (`espada_fuego`, `ojo`, etc.).
 - **Tareas pendientes:**
-  - [ ] Implementación guiada de `inventorySlice.ts`.
   - [ ] Implementación guiada de `actionLogSlice.ts`.
   - [ ] Implementación guiada de `selectors.ts`.
   - [ ] Implementación guiada de las 4 zonas visuales:
@@ -26,5 +26,6 @@
   - Atributos base mínimos en 1 al decrementar, devolviendo puntos a `availablePoints` (alineado a pauta).
   - `healHero` cura +10 HP progresivo con tope en 100 HP.
   - Presets distribuyen los 15 puntos a configuraciones especializadas: WARRIOR (15/8/7), MAGE (7/8/15), ROGUE (8/15/7).
-- **Última validación:** `npx tsc --noEmit` exitoso sin errores (0 errores). Commit `ffba320` en master.
+  - IDs semánticas y catálogo ampliado de 9 ítems en 3 categorías equilibradas.
+- **Última validación:** `npx tsc --noEmit` exitoso sin errores (0 errores). Commit `eb4af5e` en master.
 
