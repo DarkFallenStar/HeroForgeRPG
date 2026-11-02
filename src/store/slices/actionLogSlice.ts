@@ -33,7 +33,7 @@ export const actionLogSlice = createSlice({
                 const now = new Date();
                 const timeStr = now.toTimeString().split(' ')[0];
 
-                state.logs.unshift({
+                state.logs.push({
                     id: `${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
                     type: action.type,
                     payload: action.payload,
@@ -42,7 +42,7 @@ export const actionLogSlice = createSlice({
 
                 // Mantener estrictamente las últimas 5 acciones
                 if (state.logs.length > 5) {
-                    state.logs.pop();
+                    state.logs.shift();
                 }
             }
         );
