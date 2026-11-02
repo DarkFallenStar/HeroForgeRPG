@@ -30,7 +30,7 @@ export const statsSlice = createSlice({
             }
         },
         decrementStat: (state, action: PayloadAction<StatType>) => {
-            // No permitir bajar de 5 y devolver el punto
+            // No permitir bajar de 1 y devolver el punto
             if (state[action.payload] > 1) {
                 state[action.payload] -= 1;
                 state.availablePoints += 1;

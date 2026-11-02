@@ -1,16 +1,16 @@
 # Estado del Proyecto: HeroForge RPG
 
-- **Fase SDD actual:** Fase 0 / Fase 1 (Preparación de Entorno y Arquitectura).
-- **Tarea actual:** Instalación de dependencias del taller e inicialización del Store.
+- **Fase SDD actual:** Fase 3 (Modelado de Slices de Estado).
+- **Tarea actual:** Implementación de `inventorySlice.ts`.
 - **Tareas terminadas:**
   - [x] Diagnóstico completo de Antigravity, Expo y entorno.
   - [x] Configuración de reglas modulares en `.agents/rules/` y `GEMINI.md`.
   - [x] Análisis del documento del taller (`Taller Desarrollo Movil - Redux Visual (HeroForge RPG)`).
   - [x] Aprobación de diferir resolución de conflictos para el momento exacto de su implementación.
+  - [x] Instalación de dependencias: `@reduxjs/toolkit` y `react-redux`.
+  - [x] Creación de `src/store/index.ts` con RootState, AppDispatch y hooks tipados.
+  - [x] Implementación y conexión de `statsSlice.ts` con límites de atributos (hasta 1) y curación progresiva (+10 HP).
 - **Tareas pendientes:**
-  - [ ] Instalación de dependencias: `@reduxjs/toolkit` y `react-redux`.
-  - [ ] Creación de la estructura base `src/store/` (Store, RootState, AppDispatch, hooks tipados).
-  - [ ] Implementación guiada de `statsSlice.ts`.
   - [ ] Implementación guiada de `inventorySlice.ts`.
   - [ ] Implementación guiada de `actionLogSlice.ts`.
   - [ ] Implementación guiada de `selectors.ts`.
@@ -23,7 +23,8 @@
   - [ ] Verificación de tipos y pruebas visuales en Expo.
   - [ ] Guion y preparación para el video explicativo (5-7 min).
 - **Decisiones aprobadas:**
-  - Abordar y decidir los conflictos técnicos específicos (presets, pesos, fórmulas de daño, penalización de sobrecarga) en el momento exacto en que corresponda implementar cada módulo.
-  - Modelo pedagógico estricto: el estudiante implementa todo el código.
-- **Última validación:** `npx tsc --noEmit` exitoso sin errores (0 errores).
+  - Atributos base mínimos en 1 al decrementar, devolviendo puntos a `availablePoints` (alineado a pauta).
+  - `healHero` cura +10 HP progresivo con tope en 100 HP.
+  - Presets distribuyen los 15 puntos a configuraciones especializadas: WARRIOR (15/8/7), MAGE (7/8/15), ROGUE (8/15/7).
+- **Última validación:** `npx tsc --noEmit` exitoso sin errores (0 errores). Commit `ffba320` en master.
 
