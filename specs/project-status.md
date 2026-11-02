@@ -1,7 +1,7 @@
 # Estado del Proyecto: HeroForge RPG
 
-- **Fase SDD actual:** Fase 5 / Fase 6 (Integración en App.tsx y Pruebas en Vivo).
-- **Tarea actual:** Integración de los 4 componentes en `App.tsx` con `<Provider store={store}>`.
+- **Fase SDD actual:** Fase 6 (Pruebas Visuales en Expo y Guion del Video).
+- **Tarea actual:** Demostración en vivo en Expo Go y Guion de 4 Momentos para el video.
 - **Tareas terminadas:**
   - [x] Diagnóstico completo de Antigravity, Expo y entorno.
   - [x] Configuración de reglas modulares en `.agents/rules/` y `GEMINI.md`.
@@ -17,10 +17,12 @@
   - [x] Implementación de `src/components/StatsControlPanel.tsx` (Zona B).
   - [x] Implementación de `src/components/ArmoryGrid.tsx` (Zona C).
   - [x] Implementación de `src/components/ReduxLiveInspector.tsx` (Zona D).
+  - [x] Integración en `App.tsx` con `<Provider store={store}>` y cero prop drilling.
+  - [x] Verificación de tipos TypeScript estricto (`npx tsc --noEmit` exitoso, 0 errores).
 - **Tareas pendientes:**
-  - [ ] Integración en `App.tsx` con `<Provider store={store}>`.
-  - [ ] Verificación de tipos y pruebas visuales en Expo.
-  - [ ] Guion y preparación para el video explicativo (5-7 min).
+  - [ ] Ejecución y prueba en vivo con Expo Go / emulador (`npx expo start`).
+  - [ ] Preparación y entrega del Guion del Video de 5-7 minutos estructurado en los 4 momentos de la pauta.
+- **Última validación:** Commit `ab5498a` en `master` de GitHub.
 - **Decisiones aprobadas:**
   - Atributos base mínimos en 1 al decrementar, devolviendo puntos a `availablePoints` (alineado a pauta).
   - `healHero` cura +10 HP progresivo con tope en 100 HP.
