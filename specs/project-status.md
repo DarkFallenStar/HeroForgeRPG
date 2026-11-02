@@ -1,7 +1,7 @@
 # Estado del Proyecto: HeroForge RPG
 
-- **Fase SDD actual:** Fase 4 (Selectores Derivados y Lógica de Negocio).
-- **Tarea actual:** Implementación de `src/store/selectors.ts`.
+- **Fase SDD actual:** Fase 5 (Construcción de las 4 Zonas Visuales Independientes).
+- **Tarea actual:** Implementación de `src/components/HeroAvatarHUD.tsx` (Zona A).
 - **Tareas terminadas:**
   - [x] Diagnóstico completo de Antigravity, Expo y entorno.
   - [x] Configuración de reglas modulares en `.agents/rules/` y `GEMINI.md`.
@@ -12,8 +12,8 @@
   - [x] Implementación y conexión de `statsSlice.ts` con límites de atributos (hasta 1) y curación progresiva (+10 HP).
   - [x] Implementación y conexión de `inventorySlice.ts` con 9 ítems balanceados e IDs semánticas (`espada_fuego`, `ojo`, etc.).
   - [x] Implementación y conexión de `actionLogSlice.ts` con captura reactiva en `extraReducers` (`builder.addMatcher`).
+  - [x] Implementación de `src/store/selectors.ts` con estado derivado puro (atributos totales, peso, sobrecarga, clase, aura, poder penalizado al 30%).
 - **Tareas pendientes:**
-  - [ ] Implementación guiada de `selectors.ts`.
   - [ ] Implementación guiada de las 4 zonas visuales:
     - [ ] `HeroAvatarHUD` (Zona A).
     - [ ] `StatsControlPanel` (Zona B).
